@@ -19,3 +19,28 @@ Repositorio con el código del [Curso Avanzado de React de Platzi](https://platz
     -   npm i html-webpack-plugin webpack-dev-server --save-dev
 
 -   Añadir el script de ejecución de webpack-dev-server en el package.json
+
+### 2.2 Entrono de Desarrollo
+
+Para renderizar elementos html dentro de un archivo js necesitamos instalar babel para poder compilar el código correctamente
+
+-   Instalacion de las depenednecia de babel para utilizar JSX en nuestro proyecto
+    -   npm i @babel/core @babel/preset-env @babel/preset-react babel-loader --save-dev
+-   Configuración de webpack.config.js para utilizar los loaders de babel
+
+```
+module: {
+    rules: [
+      {
+        test: /\.js$/, // para los archivos que terminan con la extensión JS
+        exclude: /node_modules/, // excluimos los directorios de node_modules
+        use: {
+          loader: 'babel-loader', // usamos el loader de Babel
+          options: {
+            presets: ['@babel/preset-env', '@babel/preset-react']
+          }
+        }
+      }
+    ]
+  },
+```
