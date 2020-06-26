@@ -1,4 +1,4 @@
-const HtmlWebpackPlugin = require("html-webpack-plugin")
+const HtmlWebpackPlugin = require('html-webpack-plugin')
 
 module.exports = {
   output: {
@@ -12,10 +12,13 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.js$/,  //para los archivos que terminan con la extensión JS
-        exclude: /node_modules/,  // excluimos los directorios de node_modules
+        // para los archivos que terminan con la extensión JS
+        test: /\.js$/,
+        // excluimos los directorios de node_modules
+        exclude: /node_modules/,
         use: {
-          loader: 'babel-loader',   // usamos el loader de Babel
+          // usamos el loader de Babel
+          loader: 'babel-loader',
           options: {
             presets: [
               '@babel/preset-env',
