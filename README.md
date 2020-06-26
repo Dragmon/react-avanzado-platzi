@@ -44,3 +44,31 @@ module: {
     ]
   },
 ```
+### 2.3 Entrono de Desarrollo
+
+- Instalación de StandardJS para la busqueda de errores en el código y tener estandarizado el proyecto
+  - npm i standard --save-dev
+
+- Modificación del archivo package.json para la busqueda de errores en el código, manula y automaticamente y omitir la carpeta de api
+```
+    "standard": {
+        "ignore": [
+            "/api/**"
+        ]
+    },
+    "eslintConfig": {
+        "extends": [
+            "./node_modules/standard/eslintrc.json"
+        ]
+    }
+```
+- Tener instalado las extenciones de Eslint y Prettier en VSCode
+- agregar las siguientes lineas en el archivo settings.json de VSCode si no las tiene
+
+```
+"editor.codeActionsOnSave": {
+        "source.fixAll.eslint": true
+      },
+    "eslint.format.enable": true,
+    "prettier.eslintIntegration": true,
+```
