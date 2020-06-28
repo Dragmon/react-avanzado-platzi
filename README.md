@@ -133,3 +133,10 @@ module: {
 
 - import el archivo JSON de la carpeta api en el archivo de ListOfCategories para simular el consumo de datos
 
+### 3.3 interfaz con styled-component
+
+- Generar los componentes de PhotoCard y ListPhotoCard
+  - /src/components/PhotoCard/index.js
+  - /src/components/PhotoCard/styles.js
+  - /src/components/ListPhotoCard/index.js
+
