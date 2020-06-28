@@ -120,3 +120,11 @@ module: {
   - /src/App.js
 - Modificamos el archivo index.js para llamar al archivo App.js
 
+### 3.2 interfaz con styled-component
+
+- Creación del componente ListOfCategories
+  - /src/components/ListOfCategories/index.js
+  - /src/components/ListOfCategories/styles.js
+- Creación del archivo Globalstyles que contiene los estilos globales de la aplicación
+  - /src/GlobalStyles.js
+- Agregar estos componetes al archivo /src/App.js
