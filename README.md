@@ -128,3 +128,8 @@ module: {
 - Creación del archivo Globalstyles que contiene los estilos globales de la aplicación
   - /src/GlobalStyles.js
 - Agregar estos componetes al archivo /src/App.js
+
+### 3.3 interfaz con styled-component
+
+- import el archivo JSON de la carpeta api en el archivo de ListOfCategories para simular el consumo de datos
+
