@@ -149,6 +149,37 @@ module: {
 ### 4.1 Hooks
 
 - Generamos un hook para el componente ListOfCategories el cual nos permite traer nuestra información de una url y transformarla en un json.
-- Se genera un hook para que el menú del sitio se vuelva flotante y cuando realizmaos el scroll
-- Generar el customHook useCategoriesData para la carga de datos con un loading para el componente ListOfCategory
-- Creación de un lazy load para el componente PhotoCard
+- Se genera un hook para que el menú del sitio se vuelva flotante y cuando realizmaos el scroll.
+- Generar el customHook useCategoriesData para la carga de datos con un loading para el componente ListOfCategory.
+- Creación de un lazy load para el componente PhotoCard.
+
+### 4.1 Polyfill
+
+- Instalación de la dependencia interseccion-observer
+  - npm i intersection-observer
+- Instalar babel plugin-syntax-dynamic-import
+  - npm i @babel/plugin-syntax-dynamic-import --save-dev
+- Instalar bael-eslint
+  - npm i babel-eslint --save-dev
+- Modificar el archivo de webpack para usar el plugin-syntax-dynamic-import
+  ````
+  options: {
+            plugins: [
+              '@babel/plugin-syntax-dynamic-import'
+            ],
+            presets: [
+              '@babel/preset-env',
+              '@babel/preset-react'
+            ]
+          }
+  ````
+- Modificar el archivo packge.json
+  ````
+  "eslintConfig": {
+        "parser": "babel-eslint",
+        "extends": [
+            "./node_modules/standard/eslintrc.json"
+        ]
+    }
+  ````
+- Estos componentes se instalan para poder usar polyfill de intersection observer en cualquier navegador en el componente PhotoCard, ya que esta sintaxis que se utiliza aun esta en face experimental de javascript

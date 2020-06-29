@@ -20,6 +20,9 @@ module.exports = {
           // usamos el loader de Babel
           loader: 'babel-loader',
           options: {
+            plugins: [
+              '@babel/plugin-syntax-dynamic-import'
+            ],
             presets: [
               '@babel/preset-env',
               '@babel/preset-react'
