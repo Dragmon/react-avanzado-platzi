@@ -145,3 +145,10 @@ module: {
 - Subir componente SVG del logo y usar en App.js
 - Animación con keyframes en PhotoCard.js
   - src/styles/animation.js
+
+### 4.1 Hooks
+
+- Generamos un hook para el componente ListOfCategories el cual nos permite traer nuestra información de una url y transformarla en un json.
+- Se genera un hook para que el menú del sitio se vuelva flotante y cuando realizmaos el scroll
+- Generar el customHook useCategoriesData para la carga de datos con un loading para el componente ListOfCategory
+- Creación de un lazy load para el componente PhotoCard
