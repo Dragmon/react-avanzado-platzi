@@ -183,3 +183,7 @@ module: {
     }
   ````
 - Estos componentes se instalan para poder usar polyfill de intersection observer en cualquier navegador en el componente PhotoCard, ya que esta sintaxis que se utiliza aun esta en face experimental de javascript
+
+### 4.3 localStorage
+
+- Se crea una función que permita guadar los likes en la loclaStorage del navegador del componente PhoteCard
