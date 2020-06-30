@@ -187,3 +187,7 @@ module: {
 ### 4.3 localStorage
 
 - Se crea una función que permita guadar los likes en la loclaStorage del navegador del componente PhoteCard
+
+### 4.4 CustomHooks
+
+- Separamos la logia del componente PhotoCard para gnerar dos nuevos hook useLocalStorage y UseNearScreen, lo cual nos permitira usar estos hooks en otros componentes.
