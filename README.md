@@ -209,3 +209,23 @@ module: {
 - Modificación del componente PhotoCard para ir a un querystring (/?detail=${id})
 - Creacion del archivo /src/container/PhotoCardWithQuery.js, el cual trae la información del elemento que seleccionamos en pantalla
 - Modificamos el archivo /src/App.js para trearnos el container de PhotoCardWithQuery si hemos seleccionado un elemento
+
+### 5.4-refactorización
+
+- A los componentes con querys como buena practica se les debe dar un nombre en mayúsculas para identificarlos
+  ```
+  const GET_SINGLE_PHOTO = gql`
+  query getSinglePhoto($id:ID!) {
+    photo(id:$id) {
+      id
+      categoryId
+      src
+      likes
+      userId
+      liked
+    }
+  }
+  `
+  ```
+- Se puede generar un archivo con la query en su interior para tener un código más limpio
+- Tener las renderProps fuera del componente a renderizar
