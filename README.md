@@ -191,3 +191,14 @@ module: {
 ### 4.4 CustomHooks
 
 - Separamos la logia del componente PhotoCard para gnerar dos nuevos hook useLocalStorage y UseNearScreen, lo cual nos permitira usar estos hooks en otros componentes.
+
+### 5.1 GraphQl y React Apollo
+
+- instalación de graphql y react apollo
+  - npm i apollo-boost react-apollo graphql
+- Modificación del archivo src/index.js para consumir el servicio de apollo
+- Modificación del archivo ListOfPhotocards para el consusmo de datos con GraphQL
+
+### 5.2-Parametros-GraphQL
+
+
