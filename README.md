@@ -201,4 +201,11 @@ module: {
 
 ### 5.2-Parametros-GraphQL
 
+- Generar un hoc de wihtPhotos del componente ListOfPhotoCard
+- Generar el src/container/ListOfPhotoCardas.js
 
+### 5.3-renderProps
+
+- Modificación del componente PhotoCard para ir a un querystring (/?detail=${id})
+- Creacion del archivo /src/container/PhotoCardWithQuery.js, el cual trae la información del elemento que seleccionamos en pantalla
+- Modificamos el archivo /src/App.js para trearnos el container de PhotoCardWithQuery si hemos seleccionado un elemento
