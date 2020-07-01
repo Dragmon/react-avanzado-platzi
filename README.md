@@ -229,3 +229,10 @@ module: {
   ```
 - Se puede generar un archivo con la query en su interior para tener un código más limpio
 - Tener las renderProps fuera del componente a renderizar
+
+### 5.5-mutaciones
+
+- Generar el componente src/components/FavButton.js y src/container/ToggleLikeMutation.js
+- Extrae el boton del componente PhotoCard y pasarlo al componente FavButton
+- Generar la mutación de los likes en el componente ToggleLikeMutation
+- Importar los nuevos componentes en  PhotoCard para su uso
