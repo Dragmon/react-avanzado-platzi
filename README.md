@@ -236,3 +236,12 @@ module: {
 - Extrae el boton del componente PhotoCard y pasarlo al componente FavButton
 - Generar la mutación de los likes en el componente ToggleLikeMutation
 - Importar los nuevos componentes en  PhotoCard para su uso
+
+### 6.1-ReachRouter
+
+  - instlación de reach-router
+      - npmi @reach/router
+  - Crear la carptea page para alojar todas las páginas que utilicemos /src/page
+  - Crear el archivo Home.js dentro de page y mover todo lo que le corresponde al home que se encuntra en el archivo src/App.js
+  - Modifcar el archivo ListOfCategories para incluir el path de la ruta
+  - Modificar el archivo Home.js para resivir el nuevo path de manera dinámica
