@@ -245,3 +245,17 @@ module: {
   - Crear el archivo Home.js dentro de page y mover todo lo que le corresponde al home que se encuntra en el archivo src/App.js
   - Modifcar el archivo ListOfCategories para incluir el path de la ruta
   - Modificar el archivo Home.js para resivir el nuevo path de manera dinámica
+
+### 6.1-Links
+
+  - Import el componente de Link de Reach router en el styles.js de Category y en index.js de Logo
+  - En styles.js modificar el uso de Anchor por Link
+  - Modificar el componete de Categoria para el uso de Link
+  - En el componente de logo utilizar el componente de Link para que encierre el logo
+  - Generar componente /src/page/Details.js
+  - Agregado el link correspondiente para PhotoCard
+  - Generar en componente Navbar y agregarlo al componente App.js
+  - Crear las páginas de Favs.js, User.js y NotRegisteredUser.js
+  - Agregar los componentes creados anteriormente en App.js y una pequeña función para indicar que el usuario no esta logueado.
+
+
