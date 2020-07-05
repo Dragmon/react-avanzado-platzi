@@ -258,4 +258,9 @@ module: {
   - Crear las páginas de Favs.js, User.js y NotRegisteredUser.js
   - Agregar los componentes creados anteriormente en App.js y una pequeña función para indicar que el usuario no esta logueado.
 
+### 7.1-Gestion de usuarios
+
+  - Crear el componente src/Context.js
+  - importar el componente Context.js en los componentes a usar (index.js, App.js y NotRegisteredUser.js)
+
 
