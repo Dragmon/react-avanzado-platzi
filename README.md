@@ -263,5 +263,6 @@ module: {
   - Crear el componente src/Context.js
   - importar el componente Context.js en los componentes a usar (index.js, App.js y NotRegisteredUser.js)
   - Crear formulario de loguin (UserFomr) y el customHooks para los inputs (useInputValue.js)
+  - Se generan los estilos para los formularios de inciar sesión y registrar
 
 
