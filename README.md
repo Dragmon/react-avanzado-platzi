@@ -264,5 +264,7 @@ module: {
   - importar el componente Context.js en los componentes a usar (index.js, App.js y NotRegisteredUser.js)
   - Crear formulario de loguin (UserFomr) y el customHooks para los inputs (useInputValue.js)
   - Se generan los estilos para los formularios de inciar sesión y registrar
+  - Generar el container RegisterMutation.js para la manipulación de los datos del registro del usuario y estos se envien por grahpql y nos permita acceder como usario registrado.
+  - Agregar el container RegisterMutation al componete NoRegisterUser para poder usarlo en el formulario de registro.
 
 
