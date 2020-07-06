@@ -293,3 +293,18 @@ module: {
     ```
   - Utilizar el inspector de elementos con el plugin de React Developer Tools para analizar los renderizados de la aplicación
   - Aplicar React.memo para evitar renderizados inecesarios (ListOfCategories y Home.js)
+
+### 8.4-React-lazy
+
+  - En el componente App dejamos de importar las páginas que usamos normalmente y creamos una constante con el nombre de la página e imporgandola con React.lazy()
+  ```
+  const Favs = React.lazy(() => import('./page/Favs'))
+  ```
+  - Todo el componente que retorno tiene que estar envuelto por:
+  ```
+  <Suspense fallback={<div />}> </Suspense>
+  ```
+  El cual utiliza la prop fallback el cual indica que elemento se esta renderizando mientras se carga el componente, en este caso es un div
+  - Las páginas que renderizaremos por este método se les tendra qeu cambiar su export cont name por export default (), esto porque dentro del componente App.js ya le estamos asignado un nombre.
+
+  
