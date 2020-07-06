@@ -307,4 +307,19 @@ module: {
   El cual utiliza la prop fallback el cual indica que elemento se esta renderizando mientras se carga el componente, en este caso es un div
   - Las páginas que renderizaremos por este método se les tendra qeu cambiar su export cont name por export default (), esto porque dentro del componente App.js ya le estamos asignado un nombre.
 
-  
+### 8.4-PropTypes
+  - Instalar prop-types
+  ```
+  npm i prop-types
+  ```
+  - En el componente FavButton agregamos el código para el uso de proptypes
+  ```
+  import PropTypes from 'prop-types'
+
+  FavButton.propTypes = {
+    liked: PropTypes.bool.isRequired,
+    likes: PropTypes.number.isRequired,
+    onClick: PropTypes.func.isRequired
+  }
+  ```
+  - Los prop-types solo son de desarrollo
