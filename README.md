@@ -323,3 +323,56 @@ module: {
   }
   ```
   - Los prop-types solo son de desarrollo
+
+### 8.4-PWA
+  - Agregar la etiqueta noscript en el archivo index.html
+  - Instalar un plugin de webpack para pwa
+  ```
+  npm install webpack-pwa-manifest -D
+  ```
+  - Modificar el archivo webpack.config.js
+  ```
+  const WebpackPwaManifestPlugin = require('webpack-pwa-manifest')
+  const path = require('path')
+
+  new WebpackPwaManifestPlugin({
+      name: 'Petgram - Tu app de ftoos de mascotas',
+      shortname: 'Petgram 🐶',
+      description: 'Con Petgram puedes encontrar fotos de animales domésticos my fácilmente',
+      background_color: '#fff',
+      theme_color: '#b1a',
+      icons: [
+        {
+          src: path.resolve('src/assets/icon.png'),
+          sizes: [96, 128, 192, 256, 384, 512]
+        }
+      ]
+    })
+  ```
+  - instalación de la herramienta workbox para soporte online
+  ```
+  npm i workbox-webpack-plugin -D   
+  ```
+  - Modificar el archivo webpack.config.js
+  ```
+  const WorkboxWebpackPlugin = require('workbox-webpack-plugin')
+
+  new WorkboxWebpackPlugin.GenerateSW({
+      runtimeCaching: [
+        {
+          urlPattern: new RegExp('https://(res.cloudinary.com|images.unsplash.com)'),
+          handler: 'CacheFirst',
+          options: {
+            cacheName: 'images'
+          }
+        },
+        {
+          urlPattern: new RegExp('https://petgram-server-carlos-p.vercel.app'),
+          handler: 'NetworkFirst',
+          options: {
+            cacheName: 'api'
+          }
+        }
+      ]
+    })
+  ```
