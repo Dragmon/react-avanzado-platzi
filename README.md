@@ -270,6 +270,8 @@ module: {
   - Creación del componente LoginMutation.js para el inicio de sesión.
   - Manejo de la sessionStorage para guaradr el token de sesión para permanecer logueados a pesar de refrescar pantalla (NotRegisteredUser.js, Context.js).
   - Modificar la función de los likes para que solo el usario logueado pueda hacer likes y expirar el token.
+  - Modificación del Favs para traer los favoritos selecionados, creación del container GetFavorites.js que utilizar el componente ListOfFavs.
+  
 
 
 
