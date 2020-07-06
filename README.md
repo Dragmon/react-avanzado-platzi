@@ -268,6 +268,7 @@ module: {
   - Agregar el container RegisterMutation al componete NoRegisterUser para poder usarlo en el formulario de registro.
   - Manipulación de errores al registarse en NotRegistedUser.js y manejo del loading para bloquear los campos para que el usuario no pueda editarlos.
   - Creación del componente LoginMutation.js para el inicio de sesión
+  - Manejo de la sessionStorage para guaradr el token de sesión para permanecer logueados a pesar de refrescar pantalla (NotRegisteredUser.js, Context.js)
 
 
 
