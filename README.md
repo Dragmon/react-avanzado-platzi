@@ -273,5 +273,13 @@ module: {
   - Modificación del Favs para traer los favoritos selecionados, creación del container GetFavorites.js que utilizar el componente ListOfFavs.
   - Se crea el componente SubmitButton para hacer generico los botones de Registarse, Loguin y cerrar sesión, se genera el boton de cerrar sesión en la pagina de User, por ultimo generar el removeAuth en el Context.js
 
+### 8.1-Retoque-rutas
 
+  - Creación de la pagina NotFound.js
+  - Modificación de la rutas para cuando el usuario esta autenticado o no
 
+### 8.2-React-Helmet
+  - instalar react helmet
+    - npm i react-helmet
+  - Generar el componente Layout para el uso de helmet
+  - Insertar el Layout en las paginas donde queramos usar helmet
