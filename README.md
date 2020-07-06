@@ -271,7 +271,7 @@ module: {
   - Manejo de la sessionStorage para guaradr el token de sesión para permanecer logueados a pesar de refrescar pantalla (NotRegisteredUser.js, Context.js).
   - Modificar la función de los likes para que solo el usario logueado pueda hacer likes y expirar el token.
   - Modificación del Favs para traer los favoritos selecionados, creación del container GetFavorites.js que utilizar el componente ListOfFavs.
-  
+  - Se crea el componente SubmitButton para hacer generico los botones de Registarse, Loguin y cerrar sesión, se genera el boton de cerrar sesión en la pagina de User, por ultimo generar el removeAuth en el Context.js
 
 
 
