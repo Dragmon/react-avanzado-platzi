@@ -20,7 +20,7 @@ function useCategoriesData () {
   return { categories, loading }
 }
 
-export const ListOfCategories = () => {
+const ListOfCategoriesComponent = () => {
   /* const [categories, setCategories] = useState(mockCategories) para prueba usando el json alojado en la carpeta api */
   const { categories, loading } = useCategoriesData()
   const [showFixed, setShowFixed] = useState(false)
@@ -55,3 +55,5 @@ export const ListOfCategories = () => {
     </>
   )
 }
+
+export const ListOfCategories = React.memo(ListOfCategoriesComponent)

@@ -283,3 +283,13 @@ module: {
     - npm i react-helmet
   - Generar el componente Layout para el uso de helmet
   - Insertar el Layout en las paginas donde queramos usar helmet
+
+### 8.3-Performance
+  - Generar script en package.json para ejecución de la aplicación de producción en modo desarrollo
+    ```
+    "build:dev": "webpack --mode development",
+    "start:dev": "npx serve dist -s",
+    "server:dev": "npm run build:dev && npm run start:dev"
+    ```
+  - Utilizar el inspector de elementos con el plugin de React Developer Tools para analizar los renderizados de la aplicación
+  - Aplicar React.memo para evitar renderizados inecesarios (ListOfCategories y Home.js)
