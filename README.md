@@ -267,8 +267,9 @@ module: {
   - Generar el container RegisterMutation.js para la manipulación de los datos del registro del usuario y estos se envien por grahpql y nos permita acceder como usario registrado.
   - Agregar el container RegisterMutation al componete NoRegisterUser para poder usarlo en el formulario de registro.
   - Manipulación de errores al registarse en NotRegistedUser.js y manejo del loading para bloquear los campos para que el usuario no pueda editarlos.
-  - Creación del componente LoginMutation.js para el inicio de sesión
-  - Manejo de la sessionStorage para guaradr el token de sesión para permanecer logueados a pesar de refrescar pantalla (NotRegisteredUser.js, Context.js)
+  - Creación del componente LoginMutation.js para el inicio de sesión.
+  - Manejo de la sessionStorage para guaradr el token de sesión para permanecer logueados a pesar de refrescar pantalla (NotRegisteredUser.js, Context.js).
+  - Modificar la función de los likes para que solo el usario logueado pueda hacer likes y expirar el token.
 
 
 
