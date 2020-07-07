@@ -99,6 +99,9 @@ module: {
         "src": "(.*).json", "dest": "/$1.json"
       },
       {
+        "src": "(.*).png", "dest": "/$1.png"
+      },
+      {
         "src": "/.*", 
         "dest": "/index.html"
       }
@@ -108,7 +111,7 @@ module: {
   - Al archivo package.json agregamos el la siguiente instrucción:
     - "vercel-build": "npm run build",
   - Esto para que haga build del proyecto y realicé el deploy a Vercel.
-  - Ejecutamos en líena de comandos Vercel para hacer el deploy y nos deberia de regresar una url para ver el proyecto, y en nuestra cuenta de Vercel podremos ver los deploy realizados.
+  - Ejecutamos en líena de comandos "vercel" para hacer el deploy y nos deberia de regresar una url para ver el proyecto, y en nuestra cuenta de Vercel podremos ver los deploy realizados.
 
 ### 3.1 interfaz con styled-component
 - Instlacion de styled-components
@@ -375,4 +378,24 @@ module: {
         }
       ]
     })
+  ```
+
+### 8.4-Texting-Cypress
+  - Hacer deploy del proyecto
+  - Instalar cypress en modo desarrollo
+  ```
+  npm i cypress -D
+  ```
+  - Ejecutar el siguiente comando en consola para genear el archivo cypress.json y nos despliegue una ventana con los ejemplos de test que podemos tener 
+  ```
+  ./node_modules/.bin/cypress open
+  ```
+  - Ejecutamos la prueba de test que nos abrio en la ventana para generar la carpeta cypress donde crearemos nuestros test.
+  - Creamos nuestro primer test en la carpeta cypress/integration/petgram/test_spec.js (el _spec indica que es un archivo de test).
+  - Modificamos el archivo cypress.json para indicarle a que sitio queremos hacerle test.
+  - Crear todas la pruebas que utilizaremos para probar nuestro componente y ejecutarlas.
+  - Agregar los comandos para ejecutar cypress en el archivo package.json
+  ```
+  "test": "cypress run",
+  "test:ui": "cypress open"
   ```

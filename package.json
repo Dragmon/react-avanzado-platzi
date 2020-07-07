@@ -4,14 +4,15 @@
     "description": "¡Sígueme en Youtube! https://www.youtube.com/midudev",
     "main": "index.js",
     "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1",
         "lint": "standard",
         "vercel-build": "npm run build",
         "build": "webpack",
         "build:dev": "webpack --mode development",
         "dev": "webpack-dev-server --history-api-fallback",
         "start:dev": "npx serve dist -s",
-        "server:dev": "npm run build:dev && npm run start:dev"
+        "server:dev": "npm run build:dev && npm run start:dev",
+        "test": "cypress run",
+        "test:ui": "cypress open"
     },
     "repository": {
         "type": "git",
@@ -31,6 +32,7 @@
         "@babel/preset-react": "^7.10.1",
         "babel-eslint": "^10.1.0",
         "babel-loader": "^8.1.0",
+        "cypress": "^4.9.0",
         "html-webpack-plugin": "^4.3.0",
         "standard": "^14.3.4",
         "webpack": "^4.43.0",
